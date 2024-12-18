@@ -1,0 +1,173 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@100&family=Roboto:ital,wght@0,700;1,300&display=swap");
+@font-face {
+  font-family: "Manga";
+  src: url("../app/assets/Manga.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Yonezawa";
+  src: url("../app/assets/Yonezawa.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Wendeez";
+  src: url("../app/assets/Outrun\ future.otf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Charge Vector Black";
+  src: url("../app/assets/Charge\ Vector\ Black.otf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@keyframes flicker {
+  0%,
+  9.999%,
+  12%,
+  02.999%,
+  4%,
+  14.999%,
+  10%,
+  10% {
+    /* text-shadow: none; Uncomment if needed */
+    opacity: 0.99;
+  }
+  10%,
+  21.999%,
+  23%,
+  23.999%,
+  65%,
+  9.999% {
+    opacity: 0.4;
+  }
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 25, 255, 255;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+body {
+  background: #000;
+}
+/* Define a base background image class */
+.bg-desktop {
+  background-image: url("/casa");
+}
+
+/* Responsive background image override for mobile */
+@media (max-width: 768px) {
+  .bg-desktop {
+    background-image: url("/casitas1");
+  }
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-y: auto; /* Allow vertical scrolling if needed */
+}
+body {
+  font-family: 'Inter', 'Antonio', 'Wendeez', sans-serif; /* Use the fonts as needed */
+}
+.neon {
+  font-family: "Monoton", cursive;
+  font-size: 130px;
+  color: #ffd5ff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 400;
+  letter-spacing: 8px;
+  text-shadow: 1px 0px 4px #ffd5ff, 2px 0px 4px #ffd5ff, 3px 0px 4px #ffd5ff,
+    2px 0px 3px #d42c48, 2px 3px 15px #c3d42c, 2px 0px 15px, 5px 0px 125px,
+    20px 0vw 200px #ced42c, 40px 0vw 200px #c6d42c;
+}
+
+.flicker-slow {
+  animation: flicker 3s linear infinite;
+}
+
+.flicker-fast {
+  animation: flicker 1s linear infinite;
+}
+.text-stroke-2 {
+  font-size: 5em;
+  font-weight: 700;
+  margin: 0;
+
+  -webkit-text-stroke: 3px rgb(0, 0, 0);
+}
+.text-stroke-3 {
+  font-size: 4em;
+  font-weight: 700;
+  margin: 0;
+
+  -webkit-text-stroke:  2px black;
+}
+
+.underline-text {
+  text-decoration: underline;
+}
+
+.custom-underline {
+  text-decoration: underline;
+  text-decoration-color: black;
+  text-decoration-style: dashed;
+}
+
+
+
+.another-class {
+  font-family: "Manga", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.wendeez {
+  font-family: "Wendeez", sans-serif;
+  font-weight: 400;
+}
+
+.yonezawa {
+  font-family: "Yonezawa", sans-serif;
+  font-weight: 700;
+}
+
+.charge{
+  font-family: "Charge Vector Black", sans-serif;
+  font-weight: 700;
+}
+
+body {
+  background-image: url('/pff.jpeg'); /* Note the '/' prefix */
+  background-position: top left;
+  background-repeat: repeat;
+}
+
+.nav-item {
+  font-family: "Antonio", sans-serif; /* Example usage */
+}
