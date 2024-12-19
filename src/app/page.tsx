@@ -11,7 +11,7 @@ export default function Home() {
       <Nav />
       <div className="flex flex-col items-center justify-center min-h-screen"> {/* Centralize content vertically and horizontally */}
         <Panel />
-       <Buy />
+      
       </div>
       {/* <ThreeSections /> */}
 
