@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Nav = ({ }) => {
   return (
-    <div className="sticky hidden flex-grow top-0 left-0 p-2 z-20 bg-[#239e40] w-full shadow-2xl shadow-black font-black px-2 border-b-4 border-t-8 border-black md:flex">
+    <div className="sticky hidden flex-grow top-0 left-0 p-2 z-20 bg-[#ff70c8] w-full shadow-2xl shadow-black font-black px-2 border-b-4 border-t-8 border-black md:flex">
       <div className="flex justify-center items-center w-full">
       <Image src={"/logo.png"} alt={""} width={60} height={60} className="mr-[32px]"/>
         <div className="flex flexbox flex-row justify-center space-x-12 md:space-x-12 mr-6 text-[14px] md:text-[14px]">
