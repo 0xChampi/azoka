@@ -36,7 +36,7 @@ const ThreeSections = () => {
         <div className="bg-pink-500/40 rounded-xl text-white font-extra-bold flex flex-col items-center w-full leading-loose">
           <div className="mb-12 border-b-8 border-black flex flex-col md:flex-row justify-between items-center w-full px-4">
             <div className="text-4xl md:text-[80px] text-[#b35dff] mt-12 mb-12 text-stroke-2">
-            MAGAMAN IS HERE
+              azoka IS HERE
             </div>
             <Image
               className="mb-1"
@@ -49,7 +49,6 @@ const ThreeSections = () => {
           <VideoComponent
             src="/vid.mp4"
             ref={videoRef}
-          
             loop
             controls
             playbackRate={1}

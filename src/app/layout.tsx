@@ -11,11 +11,9 @@ const antonio = Antonio({
 });
 
 export const metadata: Metadata = {
-  title: "magaman",
-  description: "magaman",
+  title: "azoka",
+  description: "azoka",
   icons: "/wac",
-
-
 };
 
 export default function RootLayout({
@@ -25,8 +23,8 @@ export default function RootLayout({
 }) {
   return (
     <html className=" " lang="en">
-              <meta property="og:image" content="/about/opengraph-image.png" />
-        <meta name="twitter:image" content="/about/twitter-image.png" />
+      <meta property="og:image" content="/about/opengraph-image.png" />
+      <meta name="twitter:image" content="/about/twitter-image.png" />
       <body className={inter.className}>
         <div className={antonio.className}>{children}</div>
       </body>
