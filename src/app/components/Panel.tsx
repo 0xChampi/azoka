@@ -54,10 +54,10 @@ const Panel = () => {
           </div>
           <div className="text-[10vw] md:text-[4vw] text-white tracking-widest font-extrabold">
             <Image 
-              src="/public/logo.png" 
+          src="/logo.png" 
               width={880} 
               height={1000} 
-              alt="A S O K A" 
+              alt="A" 
               className="mx-4 ml-[92px] md:ml-[50px]" 
             />
           </div>
