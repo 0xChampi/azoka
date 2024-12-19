@@ -10,10 +10,10 @@ const Panel = () => {
 
   useEffect(() => {
     if (desktopVideoRef.current) {
-      desktopVideoRef.current.playbackRate = 0.6;
+      desktopVideoRef.current.playbackRate = 0.4;
     }
     if (mobileVideoRef.current) {
-      mobileVideoRef.current.playbackRate = 0.6;
+      mobileVideoRef.current.playbackRate = 0.4;
     }
   }, []);
 
@@ -54,16 +54,16 @@ const Panel = () => {
           </div>
           <div className="text-[10vw] md:text-[4vw] text-white tracking-widest font-extrabold">
             <Image 
-              src="/logo.png" 
+              src="/public/logo.png" 
               width={880} 
               height={1000} 
-              alt="MAGAMAN Logo" 
+              alt="A S O K A" 
               className="mx-4 ml-[92px] md:ml-[50px]" 
             />
           </div>
           <div className="flex justify-center mt-12">
             <a 
-              href="https://X.com/regaliaXPress" 
+              href="https://X.com/gosutoazoka" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="mx-4"
@@ -71,7 +71,7 @@ const Panel = () => {
               <Image src="/X.png" width={80} height={80} alt="Twitter Icon" />
             </a>
             <a 
-              href="https://t.me/MAGAMANSOL" 
+              href="https://t.me/iloveazoka" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="mx-4"
